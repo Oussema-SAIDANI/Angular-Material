@@ -7,12 +7,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialsModule } from './materials/materials.module';
 import { TestComponent } from './components/test/test.component';
 import { HomeComponent } from './components/home/home.component';
+import { PanierComponent } from './components/panier/panier.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    HomeComponent
+    HomeComponent,
+    PanierComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

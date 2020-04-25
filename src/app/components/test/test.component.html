@@ -1,6 +1,20 @@
 
-<!-- Badge -->
-<br><span matBadge=" 5 " matBadgeOverlap="false" matBadgeColor="red"> Notification </span>
+
+<!--badge-->
+<!-- matBadgePosition : below before , below after -->
+<!-- matBadgeSize : small , medium , large -->
+<!-- matBadgeColor -->
+<div style="padding: 10px;">
+    <span matBadge='4' matBadgePosition='below before'>Notifications</span>
+</div>
+
+<div>
+    <span matBadge='4' matBadgeOverlap='false' matBadgeColor='warn'>Notifications</span>
+</div>
+<div>
+    <span [matBadge]='notifications' [matBadgeHidden]='notifications === 0' matBadgeOverlap='false'
+        matBadgeColor='warn'>Notifications</span>
+</div>
 <!-- List -->
 <mat-list>
   <mat-list-item>
@@ -12,4 +26,42 @@ item1
       <mat-list-item>
         item3
           </mat-list-item>
+</mat-list>
+<!-- button -->
+<div>
+  <button mat-button>Click me!</button>
+  <button mat-raised-button>Raised</button>
+  <button mat-flat-button>Flat</button>
+  <button mat-stroked-button>Stroked</button>
+</div>
+<div>
+  <button mat-icon-button>Icon</button>
+  <button mat-fab>FAB</button>
+  <button mat-mini-fab>fab</button>
+</div>
+<!-- colors : primary , accent , warn -->
+<div>
+  <button color="primary" mat-button>Primary</button>
+  <button color="accent" disableRipple mat-raised-button>Primary</button>
+  <button color="warn" mat-raised-button>Warn</button>
+</div>
+
+
+<mat-list>
+  <mat-list-item>
+      <mat-icon matListIcon>home</mat-icon>
+      <h3 matLine> Heading 1 </h3>
+      <p matLine>
+          Line 1
+      </p>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+      <mat-icon matListIcon>folder</mat-icon>
+      <h3 matLine> Heading 2 </h3>
+      <p matLine>
+          <span> Line 1 </span>
+          <span> Line 2 </span>
+      </p>
+  </mat-list-item>
 </mat-list>

@@ -5,16 +5,29 @@ import { MatBadgeModule} from '@angular/material/badge';
 import { MatListModule} from '@angular/material/list';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatCardModule} from '@angular/material/card';
-const materialsCompentn = [ MatButtonModule, MatIconModule, MatBadgeModule,
-  MatListModule, MatToolbarModule,
-MatCardModule];
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatInputModule} from '@angular/material/input';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
+const materialsCompent = [
+MatButtonModule,
+MatIconModule,
+MatBadgeModule,
+MatListModule,
+MatToolbarModule,
+MatStepperModule,
+MatCardModule,
+MatInputModule,
+MatCheckboxModule
+];
+
 @NgModule({
 
   imports: [
-    materialsCompentn
+    materialsCompent
   ],
   exports: [
-    materialsCompentn
+    materialsCompent
   ]
 })
 export class MaterialsModule { }
